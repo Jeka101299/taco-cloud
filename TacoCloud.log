@@ -1,0 +1,100 @@
+2021-09-30 19:33:17.081  WARN 13100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 19:33:17.345 DEBUG 13100 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasRole('ROLE_USER')] for Ant [pattern='/design']
+2021-09-30 19:33:17.348 DEBUG 13100 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasRole('ROLE_USER')] for Ant [pattern='/orders']
+2021-09-30 19:33:17.348 DEBUG 13100 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/']
+2021-09-30 19:33:17.350 DEBUG 13100 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/**']
+2021-09-30 19:33:17.360  INFO 13100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3996d45e, org.springframework.security.web.context.SecurityContextPersistenceFilter@af50ba3, org.springframework.security.web.header.HeaderWriterFilter@2395a19a, org.springframework.security.web.csrf.CsrfFilter@5d089e9b, org.springframework.security.web.authentication.logout.LogoutFilter@6f4d7230, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@70a7764b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8d1f75e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@edb1b87, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@171b8bf0, org.springframework.security.web.session.SessionManagementFilter@2563f438, org.springframework.security.web.access.ExceptionTranslationFilter@473390d6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@680c9d22]
+2021-09-30 19:35:26.669  WARN 14172 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 19:35:26.912 DEBUG 14172 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasRole('ROLE_USER')] for Ant [pattern='/design']
+2021-09-30 19:35:26.914 DEBUG 14172 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasRole('ROLE_USER')] for Ant [pattern='/orders']
+2021-09-30 19:35:26.915 DEBUG 14172 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/']
+2021-09-30 19:35:26.916 DEBUG 14172 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/**']
+2021-09-30 19:35:26.923  INFO 14172 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19744992, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b23f8cb, org.springframework.security.web.header.HeaderWriterFilter@291177a8, org.springframework.security.web.csrf.CsrfFilter@7050d23d, org.springframework.security.web.authentication.logout.LogoutFilter@25f9b272, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1341868b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cc51a76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a7f2aa9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ebbf1ec, org.springframework.security.web.session.SessionManagementFilter@4fd27b30, org.springframework.security.web.access.ExceptionTranslationFilter@7e5d83, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57b8237f]
+2021-09-30 19:35:39.029 DEBUG 14172 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /
+2021-09-30 19:35:39.036 DEBUG 14172 --- [http-nio-8080-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-09-30 19:35:39.044 DEBUG 14172 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-09-30 19:35:39.045 DEBUG 14172 --- [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id D4545492483100F9436690B46B4D74A8
+2021-09-30 19:35:39.053 DEBUG 14172 --- [http-nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /] with attributes [permitAll]
+2021-09-30 19:35:39.054 DEBUG 14172 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /
+2021-09-30 19:35:39.397 DEBUG 14172 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:39.406 DEBUG 14172 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /
+2021-09-30 19:35:39.407 DEBUG 14172 --- [http-nio-8080-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-09-30 19:35:39.407 DEBUG 14172 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-09-30 19:35:39.407 DEBUG 14172 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:39.408 DEBUG 14172 --- [http-nio-8080-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-09-30 19:35:39.409 DEBUG 14172 --- [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id D4545492483100F9436690B46B4D74A8
+2021-09-30 19:35:39.409 DEBUG 14172 --- [http-nio-8080-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /] with attributes [permitAll]
+2021-09-30 19:35:39.410 DEBUG 14172 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /
+2021-09-30 19:35:39.418 DEBUG 14172 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:39.421 DEBUG 14172 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:39.421 DEBUG 14172 --- [http-nio-8080-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-09-30 19:35:39.467 DEBUG 14172 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /images/TacoCloud.png
+2021-09-30 19:35:39.467 DEBUG 14172 --- [http-nio-8080-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-09-30 19:35:39.467 DEBUG 14172 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-09-30 19:35:39.468 DEBUG 14172 --- [http-nio-8080-exec-3] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id D4545492483100F9436690B46B4D74A8
+2021-09-30 19:35:39.468 DEBUG 14172 --- [http-nio-8080-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /images/TacoCloud.png] with attributes [permitAll]
+2021-09-30 19:35:39.469 DEBUG 14172 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /images/TacoCloud.png
+2021-09-30 19:35:39.495 DEBUG 14172 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:39.497 DEBUG 14172 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:39.498 DEBUG 14172 --- [http-nio-8080-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-09-30 19:35:39.501 DEBUG 14172 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /images/TacoCloud.png
+2021-09-30 19:35:39.501 DEBUG 14172 --- [http-nio-8080-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-09-30 19:35:39.502 DEBUG 14172 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-09-30 19:35:39.502 DEBUG 14172 --- [http-nio-8080-exec-3] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id D4545492483100F9436690B46B4D74A8
+2021-09-30 19:35:39.502 DEBUG 14172 --- [http-nio-8080-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /images/TacoCloud.png] with attributes [permitAll]
+2021-09-30 19:35:39.503 DEBUG 14172 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /images/TacoCloud.png
+2021-09-30 19:35:39.507 DEBUG 14172 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:39.510 DEBUG 14172 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:39.510 DEBUG 14172 --- [http-nio-8080-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-09-30 19:35:42.419 DEBUG 14172 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /design
+2021-09-30 19:35:42.420 DEBUG 14172 --- [http-nio-8080-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-09-30 19:35:42.421 DEBUG 14172 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-09-30 19:35:42.421 DEBUG 14172 --- [http-nio-8080-exec-4] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id D4545492483100F9436690B46B4D74A8
+2021-09-30 19:35:42.423 DEBUG 14172 --- [http-nio-8080-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [GET /design] with attributes [hasRole('ROLE_USER')]
+2021-09-30 19:35:42.441 DEBUG 14172 --- [http-nio-8080-exec-4] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/design to session
+2021-09-30 19:35:42.444 DEBUG 14172 --- [http-nio-8080-exec-4] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2021-09-30 19:35:42.445 DEBUG 14172 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2021-09-30 19:35:42.446 DEBUG 14172 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2021-09-30 19:35:42.447 DEBUG 14172 --- [http-nio-8080-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-09-30 19:35:42.452 DEBUG 14172 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /login
+2021-09-30 19:35:42.453 DEBUG 14172 --- [http-nio-8080-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-09-30 19:35:42.453 DEBUG 14172 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-09-30 19:35:42.453 DEBUG 14172 --- [http-nio-8080-exec-5] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /login] with attributes [permitAll]
+2021-09-30 19:35:42.454 DEBUG 14172 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /login
+2021-09-30 19:35:42.575 DEBUG 14172 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:42.576 DEBUG 14172 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:42.576 DEBUG 14172 --- [http-nio-8080-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-09-30 19:35:42.599 DEBUG 14172 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /images/TacoCloud.png
+2021-09-30 19:35:42.599 DEBUG 14172 --- [http-nio-8080-exec-6] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-09-30 19:35:42.599 DEBUG 14172 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-09-30 19:35:42.600 DEBUG 14172 --- [http-nio-8080-exec-6] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /images/TacoCloud.png] with attributes [permitAll]
+2021-09-30 19:35:42.601 DEBUG 14172 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /images/TacoCloud.png
+2021-09-30 19:35:42.604 DEBUG 14172 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:42.607 DEBUG 14172 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:42.607 DEBUG 14172 --- [http-nio-8080-exec-6] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-09-30 19:35:42.877 DEBUG 14172 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /design
+2021-09-30 19:35:42.877 DEBUG 14172 --- [http-nio-8080-exec-7] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-09-30 19:35:42.878 DEBUG 14172 --- [http-nio-8080-exec-7] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8080/design
+2021-09-30 19:35:42.881 DEBUG 14172 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-09-30 19:35:42.881 DEBUG 14172 --- [http-nio-8080-exec-7] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [GET /design] with attributes [hasRole('ROLE_USER')]
+2021-09-30 19:35:42.883 DEBUG 14172 --- [http-nio-8080-exec-7] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/design to session
+2021-09-30 19:35:42.883 DEBUG 14172 --- [http-nio-8080-exec-7] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2021-09-30 19:35:42.883 DEBUG 14172 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2021-09-30 19:35:42.883 DEBUG 14172 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2021-09-30 19:35:42.883 DEBUG 14172 --- [http-nio-8080-exec-7] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-09-30 19:35:42.890 DEBUG 14172 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /login
+2021-09-30 19:35:42.890 DEBUG 14172 --- [http-nio-8080-exec-8] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-09-30 19:35:42.891 DEBUG 14172 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-09-30 19:35:42.892 DEBUG 14172 --- [http-nio-8080-exec-8] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /login] with attributes [permitAll]
+2021-09-30 19:35:42.893 DEBUG 14172 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /login
+2021-09-30 19:35:42.898 DEBUG 14172 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:42.900 DEBUG 14172 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:42.900 DEBUG 14172 --- [http-nio-8080-exec-8] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2021-09-30 19:35:42.937 DEBUG 14172 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /images/TacoCloud.png
+2021-09-30 19:35:42.938 DEBUG 14172 --- [http-nio-8080-exec-9] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2021-09-30 19:35:42.938 DEBUG 14172 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2021-09-30 19:35:42.939 DEBUG 14172 --- [http-nio-8080-exec-9] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /images/TacoCloud.png] with attributes [permitAll]
+2021-09-30 19:35:42.940 DEBUG 14172 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /images/TacoCloud.png
+2021-09-30 19:35:42.946 DEBUG 14172 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:42.947 DEBUG 14172 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2021-09-30 19:35:42.948 DEBUG 14172 --- [http-nio-8080-exec-9] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request

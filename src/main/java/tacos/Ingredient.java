@@ -1,13 +1,15 @@
 package tacos;
 
-import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
-// <-- These two here provide getters and setters along with constructor with arguments
+import org.springframework.lang.Nullable;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 @Data
 @NoArgsConstructor(force = true)
@@ -16,11 +18,14 @@ import javax.persistence.Id;
 public class Ingredient {
 
     @Id
+    @NotNull
     private final String id;
+    @NotNull
     private final String name;
+    @Enumerated(EnumType.STRING)
     private final Type type;
 
-    public static enum Type {
+    public enum Type {
         WRAP, PROTEIN, VEGGIES, CHEESE, SAUCE
     }
 }

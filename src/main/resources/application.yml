@@ -1,0 +1,22 @@
+taco.orders.pageSize: 10
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tacocloud
+    username: root
+    password: '07092013'
+#    data: ingredients.sql
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+logging:
+  file:
+    name: TacoCloud.log
+  level:
+    root: WARN
+    org.springframework.security: DEBUG
+
