@@ -11,8 +11,8 @@ import tacos.data.UserRepository;
 @RequestMapping("/register")
 public class RegistrationController {
 
-    private UserRepository userRepository;
-    private PasswordEncoder passwordEncoder;
+    private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
 
     public RegistrationController(UserRepository userRepository, PasswordEncoder passwordEncoder) {

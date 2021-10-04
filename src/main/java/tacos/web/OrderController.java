@@ -1,6 +1,5 @@
 package tacos.web;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -18,19 +17,15 @@ import javax.validation.Valid;
 @Controller
 @RequestMapping("/orders")
 @SessionAttributes("order")
-@ConfigurationProperties(prefix = "taco.orders")
 public class OrderController {
 
-    private int pageSize = 20;
+    private final OrderProps orderProps;
+    private final OrderRepository orderRepo;
 
-    private OrderRepository orderRepo;
-
-    public OrderController(OrderRepository orderRepo){
+    public OrderController(OrderRepository orderRepo,
+                           OrderProps orderProps){
         this.orderRepo = orderRepo;
-    }
-
-    public void setPageSize(int pageSize){
-        this.pageSize = pageSize;
+        this.orderProps = orderProps;
     }
 
     @GetMapping("/current")
@@ -74,8 +69,8 @@ public class OrderController {
     @GetMapping
     public String ordersForUsers(
             @AuthenticationPrincipal User user, Model model){
-        Pageable pageable = PageRequest.of(0, pageSize);
-        model.addAttribute("orders", orderRepo.findByUserOrderByOrderByCreatedAtDesc(user, pageable));
+        Pageable pageable = PageRequest.of(0, orderProps.getPageSize());
+        model.addAttribute("orders", orderRepo.findByUserOrderByCreatedAtDesc(user, pageable));
 
         return "orderList";
     }

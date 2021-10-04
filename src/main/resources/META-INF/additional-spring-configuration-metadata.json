@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "taco.orders.pageSize",
+      "type": "java.lang.String",
+      "description": "Sets the maximum amount of orders displayed in the list."
+    }
+  ] }
